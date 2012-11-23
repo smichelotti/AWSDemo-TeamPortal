@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Michelotti.AzureClients</id>
+    <version>1.0.0</version>
+    <title>Michelotti.AzureClients</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package to hold Windows Azure StorageClient and ServiceRuntime.</description>
+  </metadata>
+</package>
