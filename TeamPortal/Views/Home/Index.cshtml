@@ -1,11 +1,17 @@
 ﻿@using System.Configuration;
 @model List<TeamPortal.Models.Team>
+@{
+var context = new TeamPortal.Models.TeamPortalWebContext();
+}
            
 <div class="row-fluid">
     <div class="span9">
         <div class="hero-unit">
         <h1>Welcome to your @ConfigurationManager.AppSettings["PortalTitle"]</h1>
         <p>This site is your one-stop shop to all information pertaining to the team.</p>
+            <p>
+                @context.WriteConnection()
+            </p>
         </div>
     </div><!--/span-->
 </div><!--/row-->
