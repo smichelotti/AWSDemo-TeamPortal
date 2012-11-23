@@ -7,16 +7,8 @@ var context = new TeamPortal.Models.TeamPortalWebContext();
 <div class="row-fluid">
     <div class="span9">
         <div class="hero-unit">
-        <h1>Welcome to your @ConfigurationManager.AppSettings["PortalTitle"]</h1>
-        <p>This site is your one-stop shop to all information pertaining to the team.</p>
-            <p>
-                @ConfigurationManager.ConnectionStrings.Count <br />
-                @foreach (var item in ConfigurationManager.ConnectionStrings)
-                {
-                    @ConfigurationManager.ConnectionStrings[0].ConnectionString    <br />
-                }
-                
-            </p>
+            <h1>Welcome to your @ConfigurationManager.AppSettings["PortalTitle"]</h1>
+            <p>This site is your one-stop shop to all information pertaining to the team.</p>
         </div>
     </div><!--/span-->
 </div><!--/row-->

@@ -23,14 +23,6 @@ namespace TeamPortal.Models
         public TeamPortalWebContext()
             : base("TeamPortalDB")
         {
-            var adapter = this as IObjectContextAdapter;
-            //adapter.ObjectContext.Connection.ConnectionString
-        }
-
-        public string WriteConnection()
-        {
-            var adapter = this as IObjectContextAdapter;
-            return adapter.ObjectContext.Connection.ConnectionString;
         }
 
         public DbSet<TeamPortal.Models.Player> Players { get; set; }
